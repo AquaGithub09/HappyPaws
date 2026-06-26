@@ -1,0 +1,165 @@
+:root{
+  --primary:#FE7F2D;
+  --bg:#f0f2f5;
+  --nav-h:72px;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+}
+
+body{
+  background:var(--bg);
+  overflow:hidden;
+}
+
+.navbar{
+  height:var(--nav-h);
+  background:#fff;
+}
+
+.navbar-brand{
+  white-space:nowrap;
+  font-weight:700;
+}
+
+.dashboard{
+  height:calc(100vh - var(--nav-h));
+}
+
+.sidebar,.right-panel{
+  height:100%;
+}
+
+.feed{
+  height:100%;
+  overflow-y:auto;
+  padding-right:8px;
+}
+
+.feed::-webkit-scrollbar{
+  width:6px;
+}
+
+.feed::-webkit-scrollbar-thumb{
+  background:#cfcfcf;
+  border-radius:20px;
+}
+
+.card{
+  border:none;
+  border-radius:18px;
+}
+
+.pet-card{
+  transition:.25s;
+}
+
+.pet-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 24px rgba(0,0,0,.08);
+}
+
+.pet-card img{
+  height:280px;
+  object-fit:cover;
+}
+
+.right-wrap{
+  height:100%;
+}
+
+.right-card{
+  flex:1;
+  overflow:auto;
+}
+
+.btn-primary{
+  background:var(--primary);
+  border:none;
+}
+
+.icon-btn{
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+}
+
+.offcanvas{
+  width:300px;
+}
+
+@media(max-width:991.98px){
+  body{
+    overflow:auto;
+  }
+
+  .dashboard{
+    height:auto;
+  }
+
+  .feed,.sidebar,.right-panel{
+    height:auto;
+    overflow:visible;
+  }
+
+  .right-card{
+    min-height:250px;
+  }
+}
+
+/* image preview */
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.preview-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+}
+
+.preview-item img,
+.preview-item video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .65);
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media(max-width:576px) {
+  
+  .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .preview-item img,
+  .preview-item video {
+    height: 150px;
+  }
+  
+}

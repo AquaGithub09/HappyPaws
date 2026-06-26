@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Paws Bacolod</title>
+  <link rel="stylesheet" href="src/css/index.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top py-3 shadow-lg bg-white border-bottom">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+        🐾 <span>Happy Paws Bacolod</span>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+          <li class="nav-item">
+            <a class="nav-link nav-anim active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-anim" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Login
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-anim"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal">
+              Register
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-anim" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav-anim" href="#">Contact</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link nav-anim" href="php/dashboard.html">Demo</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="display-5 fw-bold">
+            Find Your Perfect Companion and Give Them a Loving Home
+          </h1>
+
+          <p class="text-muted">
+            Every pet deserves a second chance at happiness. Browse adorable cats and dogs waiting for a forever family,
+            and take the first step toward welcoming a loyal companion into your home.
+          </p>
+
+          <a href="#register-btn" class="hero-btn btn btn-lg text-dark me-2 fs-6" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Adopt a Pet
+          </a>
+
+        </div>
+
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <div class="hero-img bg-primary-subtle rounded" style="height:350px;">
+            <!-- <img src="src/public_Images/cat.jpg" alt="Adoptable Cat" height="100%" width="100%"> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-5 bg-white">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Why Adopt from Happy Paws?</h2>
+        <p class="text-muted">
+          Every pet deserves a loving home. We make the adoption process simple, safe, and meaningful.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+
+        <!-- Feature 1 -->
+        <div class="col-md-4">
+          <div class="p-4 border rounded-4 shadow-sm h-100 feature-card">
+            <div class="fs-1 mb-3">🐾</div>
+            <h5 class="fw-semibold">Verified Rescued Pets</h5>
+            <p class="text-muted">
+              All pets are rescued, health-checked, and ready for a new loving home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-md-4">
+          <div class="p-4 border rounded-4 shadow-sm h-100 feature-card">
+            <div class="fs-1 mb-3">❤️</div>
+            <h5 class="fw-semibold">Easy Adoption Process</h5>
+            <p class="text-muted">
+              Simple application and quick approval so you can meet your future companion faster.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-md-4">
+          <div class="p-4 border rounded-4 shadow-sm h-100 feature-card">
+            <div class="fs-1 mb-3">🏡</div>
+            <h5 class="fw-semibold">Lifelong Support</h5>
+            <p class="text-muted">
+              We guide you before and after adoption to ensure a happy and lasting bond.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ADOPTION SHOWCASE -->
+  <section class="py-5 bg-light">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Happy Adoption Stories</h2>
+        <p class="text-muted">
+          Meet some of the pets who found their forever homes through Happy Paws.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="bg-white border rounded-4 shadow-sm p-3 h-100 text-center adoption-card">
+
+            <div class="rounded mb-3 overflow-hidden" style="height:180px;">
+              <img src="src/public_Images/cat.jpg" class="w-100 h-100 object-fit-cover" alt="Bella">
+            </div>
+
+            <h6 class="fw-bold">Bella – Forever Home Found 🏡</h6>
+            <p class="text-muted small">
+              A rescued kitten now living happily with her new loving family.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="bg-white border rounded-4 shadow-sm p-3 h-100 text-center adoption-card">
+
+            <div class="rounded mb-3 overflow-hidden" style="height:180px;">
+              <img src="src/public_Images/dog.jpg" class="w-100 h-100 object-fit-cover" alt="Max">
+            </div>
+
+            <h6 class="fw-bold">Max – New Best Friend ❤️</h6>
+            <p class="text-muted small">
+              Once abandoned, now enjoying life with his forever owner.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="bg-white border rounded-4 shadow-sm p-3 h-100 text-center adoption-card">
+
+            <div class="rounded mb-3 overflow-hidden" style="height:180px;">
+              <img src="src/public_Images/cat2.jpg" class="w-100 h-100 object-fit-cover" alt="Luna">
+            </div>
+
+            <h6 class="fw-bold">Luna – Second Chance Given 🐾</h6>
+            <p class="text-muted small">
+              Found a loving home after being rescued from the streets.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-5 bg-white">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Happy Adoption Stories</h2>
+        <p class="text-muted">Real experiences from families who found their furry companions.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Testimonial 1 -->
+        <div class="col-md-6">
+          <div class="p-4 border rounded-4 shadow-sm h-100 testimonial-card">
+
+            <p class="mb-3">
+              “Adopting Bella changed our lives. She brought so much joy and energy into our home.
+              The adoption process was smooth and very supportive.”
+            </p>
+
+            <div class="d-flex align-items-center gap-2">
+              <div class="bg-primary-subtle rounded-circle" style="width:40px; height:40px;"></div>
+              <small class="text-muted">— Maria S., Adopted Bella 🐱</small>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-6">
+          <div class="p-4 border rounded-4 shadow-sm h-100 testimonial-card">
+
+            <p class="mb-3">
+              “Max is more than a pet—he’s family now. Happy Paws made the adoption experience easy and meaningful.”
+            </p>
+
+            <div class="d-flex align-items-center gap-2">
+              <div class="bg-primary-subtle rounded-circle" style="width:40px; height:40px;"></div>
+              <small class="text-muted">— John D., Adopted Max 🐶</small>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+
+      <h5 class="mb-2">Happy Paws Veterinary Clinic</h5>
+      <p class="mb-1">Compassionate care for your beloved pets</p>
+
+      <small class="text-muted d-block mb-2">
+        Open Daily | Emergency Services Available
+      </small>
+
+      <p class="mb-0">© 2026 Happy Paws Vet Clinic. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow-lg">
+
+      <!-- HEADER -->
+      <div class="modal-header border-bottom">
+        <div>
+          <h5 class="modal-title fw-bold">Happy Paw</h5>
+          <small class="text-muted">Adopt. Love. Change a life 🐾</small>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body p-4">
+
+        <div class="tab-content">
+
+          <!-- ================= LOGIN ================= -->
+          <div class="tab-pane fade show active" id="loginTab">
+
+            <div class="text-center mb-4">
+              <h4 class="fw-bold">Welcome Back</h4>
+              <p class="text-muted small mb-0">Sign in to continue your adoption journey</p>
+            </div>
+
+            <!-- Username -->
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person"></i></span>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+
+            <!-- Password -->
+            <div class="input-group mb-2">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+              <button class="btn btn-outline-secondary" type="button"
+                      onclick="togglePassword('loginPassword', this)">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+
+            <div class="text-end mb-3">
+              <a href="#" class="small text-decoration-none">Forgot password?</a>
+            </div>
+
+            <button class="btn btn-primary w-100 py-2 fw-semibold">
+              Login
+            </button>
+
+          </div>
+
+          <!-- ================= REGISTER ================= -->
+          <div class="tab-pane fade" id="registerTab">
+
+            <div class="text-center mb-4">
+              <h4 class="fw-bold">Create Account</h4>
+              <p class="text-muted small mb-0">Join our pet adoption community 🐶🐱</p>
+            </div>
+
+            <!-- Name -->
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person"></i></span>
+              <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+
+            <!-- Email -->
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <!-- Password -->
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="password" class="form-control" id="regPassword" placeholder="Password">
+              <button class="btn btn-outline-secondary" type="button"
+                      onclick="togglePassword('regPassword', this)">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+
+            <!-- Confirm -->
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+              <input type="password" class="form-control" id="regConfirm" placeholder="Confirm Password">
+              <button class="btn btn-outline-secondary" type="button"
+                      onclick="togglePassword('regConfirm', this)">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+
+            <button class="btn btn-success w-100 py-2 fw-semibold">
+              Create Account
+            </button>
+
+          </div>
+
+        </div><br>
+        
+          
+        <!-- SWITCH -->
+        <ul class="nav nav-pills nav-justified mb-4" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#loginTab">
+              Login
+            </button>
+          </li>
+          <li class=" nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#registerTab">
+              Register
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function togglePassword(inputId, btn) {
+  const input = document.getElementById(inputId);
+  const icon = btn.querySelector("i");
+
+  if (input.type === "password") {
+    input.type = "text";
+    icon.classList.remove("bi-eye");
+    icon.classList.add("bi-eye-slash");
+  } else {
+    input.type = "password";
+    icon.classList.remove("bi-eye-slash");
+    icon.classList.add("bi-eye");
+  }
+}
+</script>
+</body>
+
+</html>
